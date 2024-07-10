@@ -9,9 +9,11 @@ public class Unit : MonoBehaviour
 
     private SpriteRenderer _spriteRenderer;
 
-    private void Start()
+    public void Initialize(int level)
     {
         _spriteRenderer = GetComponent<SpriteRenderer>();
+        Level = level;
+        UpdateState();
     }
 
     public void IncreaseLevel()
