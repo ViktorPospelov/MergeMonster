@@ -13,5 +13,6 @@ namespace YG
         public bool promptDone;
 
         public int[] playerUnits = new int[15];
+        public int money;
     }
 }
